@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/addItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Add Item"
+        android:textColor="#212121"
+        android:background="#64b5f6"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/nameOfItemEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Name"
+        android:layout_marginBottom="20dp"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/priceOfItemEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Price"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/quantityOfItemEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Quantity"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/homePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/jesus_welcome"
+        android:layout_gravity="center"
+        >
+    </ImageView>
+</LinearLayout>

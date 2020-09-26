@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Add Pc"
+        android:textColor="#212121"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cameraButtonPc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="camera"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/galleryButtonPc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="gallery"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pcNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Pc Name"
+        >
+    </EditText>
+
+    <EditText
+
+        android:id="@+id/processorNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Processor Name"
+        >
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/ramEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="RAM"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:text="Add"
+        android:textSize="20dp"
+
+        >
+    </Button>
+
+</LinearLayout>

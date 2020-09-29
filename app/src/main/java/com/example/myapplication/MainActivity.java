@@ -219,12 +219,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
       if (v == submitButtonSignIn)
       {
-            saveBitmapInFolder(bitmapUser);
-            try {
-                EditSpSignIn();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+          if (uriUser == null)
+          {
+              Toast toast = Toast.makeText(this,"you have to choose or take a photo",Toast.LENGTH_SHORT);
+              toast.show();
+          }
+          else
+              {
+                  saveBitmapInFolder(bitmapUser);
+                  try {
+                      EditSpSignIn();
+                  } catch (IOException e) {
+                      e.printStackTrace();
+                  }
+              }
+
         }
 
       if (v  == cameraButtonSignIn)
